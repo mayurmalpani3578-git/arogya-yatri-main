@@ -437,3 +437,29 @@ transform: translateX(-100%);
         cursor: pointer;
       }
     }
+
+    /* instagram embed reels */
+    .no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.reel-embed-card {
+  flex: 0 0 320px;
+  max-width: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Force embed to fit card */
+.reel-embed-card .instagram-media {
+  margin: 0 !important;
+  min-width: 100% !important;
+  width: 100% !important;
+}
+
